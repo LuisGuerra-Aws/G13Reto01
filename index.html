@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Hoja de Vida</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <script src="./js/scripts.js"></script>
+
+</head>
+<body>
+    <header>
+        <img src="./images/fotoHDV.jpg" >
+        <h1>Luis Augusto Guerra Hernández</h1>
+    </header>
+
+    <div class="container">
+        <section id="info-personal">
+            <h2>Información Personal</h2>
+            <p>Email: luis.guerra.talentotech@usa.edu.co</p>
+            <p>Teléfono: +57 3175108164</p>
+            <p>Ubicación: Bogotá, Cundinamarca / Colombia</p>
+        </section>
+
+        <section id="objetivo">
+            <h2>Objetivo Profesional</h2>
+            <p>Ser un creador de líderes en tecnología a partir de la enseñanza de nuevos conocimientos, con base en la teoría y la experiencia práctica de 32 años en áreas de Tecnología.  
+                 </p>
+            <p>Igualmente,  ser un emprendedor de nuevas tecnologías y sitios de conocimiento de negocio y código abierto.</p>
+       </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+            <ul id="lista-experiencia">
+                <!-- La experiencia laboral se añadirá aquí dinámicamente -->
+            </ul>
+        </section>
+
+        <section id="educacion">
+            <h2>Educación</h2>
+            <ul id="lista-educacion">
+                <!-- La educación se añadirá aquí dinámicamente -->
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Llamar a las funciones cuando se cargue la página
+        window.onload = function() {
+            añadirExperiencias();
+            añadirEducacion();
+        };
+    </script>
+</body>
+</html>
